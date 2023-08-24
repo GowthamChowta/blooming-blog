@@ -6,14 +6,14 @@
 
 .contentEditable {
   height: 500px;
-  padding: 0 8px;
+  padding: 0 20px;
   border: 1px solid #eeeeee;
 }
 
 .placeholder {
   position: absolute;
   top: 62px;
-  left: 8px;
+  left: 20px;
 }
 
 .toolbar {
@@ -43,9 +43,19 @@
   cursor: pointer;
   border-radius: 10px;
 }
+.toolbar button.toolbar-button i {
+  color: rgb(110, 106, 106);
+}
 
 .toolbar button.toolbar-button.active i {
-  color: rgb(50, 50, 50);
+  color: rgb(41, 40, 40);
+}
+
+/* Divider */
+.toolbar .divider {
+  width: 1px;
+  background-color: #eee;
+  margin: 0 4px;
 }
 
 /* Dropdown */
@@ -54,7 +64,7 @@
 }
 
 .fa-solid {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .dropdown {
