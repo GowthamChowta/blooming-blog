@@ -21,7 +21,11 @@ import {
   MyCustomAutoFocusPlugin,
   MyHeadingPlugin
 } from './plugins';
-import { FontSizeDropDown, FontStyleDropDown } from './dropdowns';
+import {
+  FontSizeDropDown,
+  FontStyleDropDown,
+  FormatDropDown
+} from './dropdowns';
 interface Props {}
 
 function onError(error: Error): void {
@@ -82,6 +86,7 @@ function ToolbarPlugin(): JSX.Element {
       <Divider />
       <FontSizeDropDown fontsize={fontSize} editor={editor} />
       <FontStyleDropDown fontStyle={fontStyle} editor={editor} />
+      <FormatDropDown editor={editor} />
     </div>
   );
 }
