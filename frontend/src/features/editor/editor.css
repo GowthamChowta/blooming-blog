@@ -1,0 +1,124 @@
+.editorWrapper {
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.contentEditable {
+  height: 500px;
+  padding: 0 20px;
+  border: 1px solid #eeeeee;
+}
+
+.placeholder {
+  position: absolute;
+  top: 62px;
+  left: 20px;
+}
+
+.toolbar {
+  /* background-color: rgb(234, 226, 226); */
+  border: 1px solid #eeeeee;
+  display: flex;
+}
+
+.toolbar-button {
+  padding: 8px;
+  margin: 5px;
+  border: none;
+  background-color: inherit;
+  font-weight: 800;
+  color: rgb(137, 136, 136);
+  font-size: 14px;
+}
+
+.toolbar button.toolbar-button.active {
+  background-color: #eeeeee;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.toolbar .toolbar-button:hover {
+  background-color: #eeeeee;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.toolbar button.toolbar-button i {
+  color: rgb(110, 106, 106);
+}
+
+.toolbar button.toolbar-button.active i {
+  color: rgb(41, 40, 40);
+}
+
+/* Divider */
+.toolbar .divider {
+  width: 1px;
+  background-color: #eee;
+  margin: 0 4px;
+}
+
+/* Dropdown */
+.dropdown-container {
+  position: relative;
+}
+
+.fa-solid {
+  font-size: 13px;
+}
+
+.dropdown {
+  z-index: 10;
+  display: block;
+  position: absolute;
+  top: 30px;
+  box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  min-height: 40px;
+  background-color: #fff;
+  min-width: fit-content;
+}
+
+.dropdown .item {
+  margin: 0 8px 0 8px;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #050505;
+  cursor: pointer;
+  line-height: 16px;
+  font-size: 15px;
+  flex-shrink: 0;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 0;
+  max-width: 240px;
+  min-width: 100px;
+  /* min-height: fit-content; */
+}
+
+.dropdown .item:first-child {
+  margin-top: 8px;
+}
+.dropdown .item:last-child {
+  margin-bottom: 8px;
+}
+.dropdown .item:hover {
+  background-color: #eee;
+}
+
+.dropdown .item .text {
+  display: flex;
+  line-height: 20px;
+  flex-grow: 1;
+  min-width: 150px;
+}
+
+.dropdown .item.font-size {
+  min-width: unset;
+}
+
+/* .dropdown .item; */
