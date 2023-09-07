@@ -4,12 +4,6 @@
   border-radius: 10px;
 }
 
-.contentEditable {
-  height: 500px;
-  padding: 0 20px;
-  border: 1px solid #eeeeee;
-}
-
 .placeholder {
   position: absolute;
   top: 62px;
@@ -122,3 +116,21 @@
 }
 
 /* .dropdown .item; */
+
+/* Editor CSS*/
+.infinite-height-editable{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+.content-editable {
+  flex-grow: 1; 
+  min-height: 500px; 
+  border: 1px solid #ccc;
+  padding: 0 20px;
+  outline: none; 
+  overflow-y: auto; 
+  white-space: pre-wrap; 
+}
