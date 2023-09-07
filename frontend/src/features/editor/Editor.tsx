@@ -100,14 +100,16 @@ export default function Editor({}: Props): JSX.Element {
   };
 
   return (
-    <LexicalComposer initialConfig={initialConfig}>
+    <div className='infinite-height-editable'>
+      <LexicalComposer initialConfig={initialConfig}>
       <ToolbarPlugin />
       <RichTextPlugin
-        contentEditable={<ContentEditable className="contentEditable" />}
+        contentEditable={<ContentEditable className="content-editable" />}
         placeholder={<div className="placeholder">Enter some text...</div>}
         ErrorBoundary={LexicalErrorBoundary}
       />
       <HistoryPlugin />
     </LexicalComposer>
+    </div>
   );
 }
